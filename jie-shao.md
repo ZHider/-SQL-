@@ -34,6 +34,16 @@ SQL 注入是指应用程序未能对 SQL 查询中使用的用户输入内容�
 SELECT col FROM table1 WHERE id=1; DROP table2
 ```
 
+PHP、ASP 和 ASP.NET 脚本语言在与后端数据库管理系统交互时确实支持批量查询，但有几个例外。下表表示了在默认配置下批量查询是否被支持。
+
+|                      | ASP | ASP.NET | PHP |
+|:--------------------:|:---:|:-------:|:---:|
+|         MySQL        |  NO |   Yes   |  NO |
+|      PostgreSQL      | Yes |   Yes   | Yes |
+| Microsoft SQL Server | Yes |   Yes   | Yes |
+
+　　表1：编程语言和其对批量查询的支持
+
 批量查询功能是了解本研究的关键一步。
 
 ## 堆叠查询注入
